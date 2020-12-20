@@ -16,14 +16,17 @@ namespace Cyber_Punk_Trainer
     {
         Mem Meme = new Mem();
         public static string CyberPunk = "Cyberpunk2077.exe";
-        public static string PerkPoints = "Cyberpunk2077.exe+0x03CBF400,0x9B0,0x38,0x0,0x0,0x38,0x68,0x14"; //Perk Points
-        public static string CommonCraftingItem = "Cyberpunk2077.exe+049221B8,0x260,0x18,0x5F0,0x58,0x0,0x0,0x120,0x78"; //Common Item Components
-        public static string UncommonCraftingItem = "Cyberpunk2077.exe+0x03CBF400,0xF60,0x50,0x38,0x280,0xF0,0x0,0x130,0x78"; //Uncommon Item Component
-        public static string RareCraftingItem = "Cyberpunk2077.exe+0x04921BB8,0x40,0x38,0x2F0,0x58,0x0,0x0,0x310,0x78"; //Rare Item Components
-        public static string RareUpgradeItem = "Cyberpunk2077.exe+0x04637A50,0x240,0x18,0x120,0xB0,0xF0,0x0,0xA80,0x108"; //Rare Upgrade Components
-        public static string EpicItemComponents = "Cyberpunk2077.exe+0x04921BB8,0x118,0x50,0x120,0xB0,0xF0,0x0,0xB00,0x738"; //Epic Item Components
-        public static string EpicUpgradeComponents = "Cyberpunk2077.exe+0x04921BB8,0x198,0x80,0x120,0xB0,0xF0,0x0,0x9A0,0x108"; //Epic Upgrade Components
-        public static string LegendaryItemComponents = "Cyberpunk2077.exe+0x04922100,0x480,0x18,0x5F0,0x58,0x0,0x0,0x310,0x588"; //Legendary Item Components
+        public static string AttributePoints = ""; //Attribute Points
+        public static string PerkPoints = "Cyberpunk2077.exe+0x03C7F200,9B0,0x8,0x38,0x0,0x0,0x38,0x68,0x14"; //Perk Points
+        public static string CommonCraftingItem = "Cyberpunk2077.exe+0x048E0FF8,0x40,0x38,0x2F0,0x58,0x0,0x0,0x120,0x78"; //Common Item Components
+        public static string UncommonCraftingItem = "Cyberpunk2077.exe+0x048E0FF8,0x138,0x40,0x120,0xB0,0xF0,0x0,0x130,0x78"; //Uncommon Item Component
+        public static string RareCraftingItem = "Cyberpunk2077.exe+0x048E0FF8,0x198,0x80,0x98,0xA0,0xF0,0,0x310,0x78"; //Rare Item Components
+        public static string RareUpgradeItem = "Cyberpunk2077.exe+0x048E0FF8,0x40,0x18,0x5F0,0x58,0x0,0x0,0xA90,0x78"; //Rare Upgrade Components
+        public static string EpicItemComponents = "Cyberpunk2077.exe+0x048E1508,0x590,0x38,0x2F0,0x58,0x0,0x0,0xC40,0x78"; //Epic Item Components
+        public static string EpicUpgradeComponents = "Cyberpunk2077.exe+0x048E0FF8,0x118,0x50,0x120,0xB0,0xF0,0x0,0x9B0,0x78"; //Epic Upgrade Components
+        public static string LegendaryItemComponents = "Cyberpunk2077.exe+0x048E1640,0x150,0x18,0x270,0x1D8,0x0,0x0,0x3F0,0x78"; //Legendary Item Components
+        public static string LegendaryUpgradeComponents = "Cyberpunk2077.exe+0x048E0FF8,0x40,0x38,0x2F0,0x58,0x0,0x0,0x550,0x78"; //Legendary Upgrade Components
+        public static string PlayerProgression = "Cyberpunk2077.exe+0x03C7F200,0,38,0,0,38,0"; //Player Progression Pointer
         public Form1()
         {
             InitializeComponent();
@@ -94,7 +97,14 @@ namespace Cyber_Punk_Trainer
         //Button to add 1k to rare item components
         private void butRare_Click(object sender, EventArgs e)
         {
-
+            int PID = Meme.GetProcIdFromName(CyberPunk);
+            if (PID > 0)
+            {
+                Meme.OpenProcess(PID);
+                // This method makes any methods in the parameter, a background, threaded task.
+                Thread t = new Thread(() => statAdd(RareCraftingItem, 1000, "Rare Crafting Items")) { IsBackground = true };
+                t.Start();
+            }
         }
 
         //Button to add 1 available perk point
@@ -127,13 +137,27 @@ namespace Cyber_Punk_Trainer
         //Button to add 1k to rare upgrade components
         private void butRareUp_Click(object sender, EventArgs e)
         {
-
+            int PID = Meme.GetProcIdFromName(CyberPunk);
+            if (PID > 0)
+            {
+                Meme.OpenProcess(PID);
+                // This method makes any methods in the parameter, a background, threaded task.
+                Thread t = new Thread(() => statAdd(RareUpgradeItem, 1000, "Rare Upgrade Items")) { IsBackground = true };
+                t.Start();
+            }
         }
 
         //Button to add 1k to epic upgrade components
         private void butEpicUp_Click(object sender, EventArgs e)
         {
-
+            int PID = Meme.GetProcIdFromName(CyberPunk);
+            if (PID > 0)
+            {
+                Meme.OpenProcess(PID);
+                // This method makes any methods in the parameter, a background, threaded task.
+                Thread t = new Thread(() => statAdd(EpicUpgradeComponents, 1000, "Epic Upgrade Items")) { IsBackground = true };
+                t.Start();
+            }
         }
 
         //Button to add 1k to legendary item components
@@ -149,6 +173,46 @@ namespace Cyber_Punk_Trainer
                     t.Start();
 
                 }
+            }
+        }
+
+         //Button to add 1k to legendary upgrade components
+        private void butLegUp_Click(object sender, EventArgs e)
+        {
+            int PID = Meme.GetProcIdFromName(CyberPunk);
+            if (PID > 0)
+            {
+                Meme.OpenProcess(PID);
+                // This method makes any methods in the parameter, a background, threaded task.
+                Thread t = new Thread(() => statAdd(LegendaryUpgradeComponents, 1000, "Legendary Upgrade Items")) { IsBackground = true };
+                t.Start();
+            }
+        }
+
+        private void butAttribute_Click(object sender, EventArgs e)
+        {
+            {
+                int PID = Meme.GetProcIdFromName(CyberPunk);
+                if (PID > 0)
+                {
+                    Meme.OpenProcess(PID);
+                    // This method makes any methods in the parameter, a background, threaded task.
+                    Thread t = new Thread(() => statAdd(AttributePoints, 1000, "Uncommon Crafting Items")) { IsBackground = true };
+                    t.Start();
+
+                }
+            }
+        }
+
+        private void butEpicIt_Click(object sender, EventArgs e)
+        {
+            int PID = Meme.GetProcIdFromName(CyberPunk);
+            if (PID > 0)
+            {
+                Meme.OpenProcess(PID);
+                // This method makes any methods in the parameter, a background, threaded task.
+                Thread t = new Thread(() => statAdd(EpicItemComponents, 1000, "Epic Crafting Items")) { IsBackground = true };
+                t.Start();
             }
         }
     }

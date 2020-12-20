@@ -36,11 +36,13 @@
             this.butEpicIt = new System.Windows.Forms.Button();
             this.butEpicUp = new System.Windows.Forms.Button();
             this.butLegItems = new System.Windows.Forms.Button();
+            this.butLegUp = new System.Windows.Forms.Button();
+            this.butAttribute = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // butPerk
             // 
-            this.butPerk.Location = new System.Drawing.Point(397, 185);
+            this.butPerk.Location = new System.Drawing.Point(402, 322);
             this.butPerk.Name = "butPerk";
             this.butPerk.Size = new System.Drawing.Size(157, 49);
             this.butPerk.TabIndex = 0;
@@ -50,7 +52,7 @@
             // 
             // butCommonItem
             // 
-            this.butCommonItem.Location = new System.Drawing.Point(397, 299);
+            this.butCommonItem.Location = new System.Drawing.Point(402, 436);
             this.butCommonItem.Name = "butCommonItem";
             this.butCommonItem.Size = new System.Drawing.Size(157, 49);
             this.butCommonItem.TabIndex = 1;
@@ -60,7 +62,7 @@
             // 
             // butUncommon
             // 
-            this.butUncommon.Location = new System.Drawing.Point(397, 412);
+            this.butUncommon.Location = new System.Drawing.Point(402, 549);
             this.butUncommon.Name = "butUncommon";
             this.butUncommon.Size = new System.Drawing.Size(157, 49);
             this.butUncommon.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             // butRare
             // 
-            this.butRare.Location = new System.Drawing.Point(397, 527);
+            this.butRare.Location = new System.Drawing.Point(402, 664);
             this.butRare.Name = "butRare";
             this.butRare.Size = new System.Drawing.Size(157, 49);
             this.butRare.TabIndex = 3;
@@ -80,7 +82,7 @@
             // 
             // butRareUp
             // 
-            this.butRareUp.Location = new System.Drawing.Point(397, 639);
+            this.butRareUp.Location = new System.Drawing.Point(630, 211);
             this.butRareUp.Name = "butRareUp";
             this.butRareUp.Size = new System.Drawing.Size(157, 49);
             this.butRareUp.TabIndex = 4;
@@ -90,16 +92,17 @@
             // 
             // butEpicIt
             // 
-            this.butEpicIt.Location = new System.Drawing.Point(637, 185);
+            this.butEpicIt.Location = new System.Drawing.Point(630, 322);
             this.butEpicIt.Name = "butEpicIt";
             this.butEpicIt.Size = new System.Drawing.Size(157, 49);
             this.butEpicIt.TabIndex = 5;
             this.butEpicIt.Text = "Epic Item Components +1k";
             this.butEpicIt.UseVisualStyleBackColor = true;
+            this.butEpicIt.Click += new System.EventHandler(this.butEpicIt_Click);
             // 
             // butEpicUp
             // 
-            this.butEpicUp.Location = new System.Drawing.Point(637, 299);
+            this.butEpicUp.Location = new System.Drawing.Point(630, 436);
             this.butEpicUp.Name = "butEpicUp";
             this.butEpicUp.Size = new System.Drawing.Size(157, 49);
             this.butEpicUp.TabIndex = 6;
@@ -109,13 +112,33 @@
             // 
             // butLegItems
             // 
-            this.butLegItems.Location = new System.Drawing.Point(637, 412);
+            this.butLegItems.Location = new System.Drawing.Point(630, 549);
             this.butLegItems.Name = "butLegItems";
             this.butLegItems.Size = new System.Drawing.Size(157, 49);
             this.butLegItems.TabIndex = 7;
             this.butLegItems.Text = "Legendary Item Components +1k";
             this.butLegItems.UseVisualStyleBackColor = true;
             this.butLegItems.Click += new System.EventHandler(this.butLegItems_Click);
+            // 
+            // butLegUp
+            // 
+            this.butLegUp.Location = new System.Drawing.Point(630, 664);
+            this.butLegUp.Name = "butLegUp";
+            this.butLegUp.Size = new System.Drawing.Size(157, 49);
+            this.butLegUp.TabIndex = 8;
+            this.butLegUp.Text = "Legendary Upgrade Components +1k";
+            this.butLegUp.UseVisualStyleBackColor = true;
+            this.butLegUp.Click += new System.EventHandler(this.butLegUp_Click);
+            // 
+            // butAttribute
+            // 
+            this.butAttribute.Location = new System.Drawing.Point(402, 211);
+            this.butAttribute.Name = "butAttribute";
+            this.butAttribute.Size = new System.Drawing.Size(157, 49);
+            this.butAttribute.TabIndex = 9;
+            this.butAttribute.Text = "Attribute Point +1";
+            this.butAttribute.UseVisualStyleBackColor = true;
+            this.butAttribute.Click += new System.EventHandler(this.butAttribute_Click);
             // 
             // Form1
             // 
@@ -124,6 +147,8 @@
             this.BackgroundImage = global::Cyber_Punk_Trainer.Properties.Resources.thumb_1920_1062752;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1505, 824);
+            this.Controls.Add(this.butAttribute);
+            this.Controls.Add(this.butLegUp);
             this.Controls.Add(this.butLegItems);
             this.Controls.Add(this.butEpicUp);
             this.Controls.Add(this.butEpicIt);
@@ -148,6 +173,8 @@
         private System.Windows.Forms.Button butEpicIt;
         private System.Windows.Forms.Button butEpicUp;
         private System.Windows.Forms.Button butLegItems;
+        private System.Windows.Forms.Button butLegUp;
+        private System.Windows.Forms.Button butAttribute;
     }
 }
 
