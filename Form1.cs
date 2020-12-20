@@ -16,7 +16,7 @@ namespace Cyber_Punk_Trainer
     {
         Mem Meme = new Mem();
         public static string CyberPunk = "Cyberpunk2077.exe";
-        public static string AttributePoints = ""; //Attribute Points
+        public static string AttributePoints = "Cyberpunk2077.exe+0x03C7F200,0x9B0,0x38,0x0,0x0,0x38,0x68,0x8"; //Attribute Points
         public static string PerkPoints = "Cyberpunk2077.exe+0x03C7F200,9B0,0x8,0x38,0x0,0x0,0x38,0x68,0x14"; //Perk Points
         public static string CommonCraftingItem = "Cyberpunk2077.exe+0x048E0FF8,0x40,0x38,0x2F0,0x58,0x0,0x0,0x120,0x78"; //Common Item Components
         public static string UncommonCraftingItem = "Cyberpunk2077.exe+0x048E0FF8,0x138,0x40,0x120,0xB0,0xF0,0x0,0x130,0x78"; //Uncommon Item Component
@@ -189,6 +189,7 @@ namespace Cyber_Punk_Trainer
             }
         }
 
+        //Button to add 1 Attribute point
         private void butAttribute_Click(object sender, EventArgs e)
         {
             {
@@ -204,6 +205,7 @@ namespace Cyber_Punk_Trainer
             }
         }
 
+        //Button to add 1k to epic item components
         private void butEpicIt_Click(object sender, EventArgs e)
         {
             int PID = Meme.GetProcIdFromName(CyberPunk);
