@@ -66,7 +66,7 @@ namespace Cyber_Punk_Trainer
             try
             {
                 int currentStat = Meme.ReadInt(pointer);
-                if (currentStat == 0) { MessageBox.Show("Value may be 0/invalid!"); }
+                if (currentStat < 0) { MessageBox.Show("Value may be 0/invalid!"); }
                 int newStat = currentStat + amount;
                 Meme.WriteMemory(pointer, "int", newStat.ToString());
                 Thread.Sleep(2);
@@ -198,7 +198,7 @@ namespace Cyber_Punk_Trainer
                 {
                     Meme.OpenProcess(PID);
                     // This method makes any methods in the parameter, a background, threaded task.
-                    Thread t = new Thread(() => statAdd(AttributePoints, 1000, "Uncommon Crafting Items")) { IsBackground = true };
+                    Thread t = new Thread(() => statAdd(AttributePoints, 1, "Uncommon Crafting Items")) { IsBackground = true };
                     t.Start();
 
                 }
