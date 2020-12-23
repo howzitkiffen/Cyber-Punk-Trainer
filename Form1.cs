@@ -198,7 +198,7 @@ namespace Cyber_Punk_Trainer
                 {
                     Meme.OpenProcess(PID);
                     // This method makes any methods in the parameter, a background, threaded task.
-                    Thread t = new Thread(() => statAdd(AttributePoints, 1, "Uncommon Crafting Items")) { IsBackground = true };
+                    Thread t = new Thread(() => statAdd(AttributePoints, 1, "Attribute Points")) { IsBackground = true };
                     t.Start();
 
                 }
