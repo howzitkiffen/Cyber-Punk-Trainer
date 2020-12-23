@@ -95,5 +95,14 @@
   <ItemGroup>
     <None Include="Resources\thumb-1920-1062752.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\age_gate_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\age_gate_logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

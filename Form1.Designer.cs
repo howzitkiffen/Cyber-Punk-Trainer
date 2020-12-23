@@ -38,6 +38,8 @@
             this.butLegItems = new System.Windows.Forms.Button();
             this.butLegUp = new System.Windows.Forms.Button();
             this.butAttribute = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // butPerk
@@ -132,6 +134,8 @@
             // 
             // butAttribute
             // 
+            this.butAttribute.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.butAttribute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butAttribute.Location = new System.Drawing.Point(402, 211);
             this.butAttribute.Name = "butAttribute";
             this.butAttribute.Size = new System.Drawing.Size(157, 49);
@@ -140,6 +144,16 @@
             this.butAttribute.UseVisualStyleBackColor = true;
             this.butAttribute.Click += new System.EventHandler(this.butAttribute_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Cyber_Punk_Trainer.Properties.Resources.age_gate_logo__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(650, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(843, 193);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +161,7 @@
             this.BackgroundImage = global::Cyber_Punk_Trainer.Properties.Resources.thumb_1920_1062752;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1505, 824);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.butAttribute);
             this.Controls.Add(this.butLegUp);
             this.Controls.Add(this.butLegItems);
@@ -159,6 +174,7 @@
             this.Controls.Add(this.butPerk);
             this.Name = "Form1";
             this.Text = "Trainer Punk";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -175,6 +191,7 @@
         private System.Windows.Forms.Button butLegItems;
         private System.Windows.Forms.Button butLegUp;
         private System.Windows.Forms.Button butAttribute;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
