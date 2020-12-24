@@ -48,7 +48,7 @@ If there are other stats you want to see, let me know!
 I'm constantly making things when I'm not at work.
 You may violate End User License Agreements by using this tool.**
 
-Copyright (c) <2020> <Ryan Johnson>
+Copyright (c) 2020 Ryan Johnson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
