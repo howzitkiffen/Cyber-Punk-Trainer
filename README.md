@@ -23,6 +23,26 @@ Thanks and Enjoy!
 
 -Ryan
 
+![Capture1](./Capture1.png)
+![Capture2](./Capture2.png)
+
+__Current Values:__
+
+Can add +1 to the following values:
+Attribute Points
+Perk Points
+
+Can add +1000 to the following values:
+Common Item Components 
+Uncommon Item Componenets
+Rare Item Components
+Rare Upgrade Components
+Epic Item/Upgrade Components
+Legendary Item/Upgrade Components
+
+
+If there are other stats you want to see, let me know!
+*Please Note that Values Don't Refresh until you swap tabs in-game
 
 **I in no way have any affiliation with CDProject Red, Cyberpunk 2077, and have no intentions of monetization.  I am just a big fan! and this is just a fun project for me.
 I'm constantly making things when I'm not at work.
