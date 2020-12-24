@@ -29,7 +29,7 @@ Thanks and Enjoy!
 __Current Values:__
 
 Can add +1 to the following values:
-*Attribute Points
+<br> *Attribute Points </br>
 *Perk Points
 
 Can add +1000 to the following values:
