@@ -33,7 +33,7 @@ Can add +1 to the following values:
 *Perk Points
 
 Can add +1000 to the following values:
-*Common Item Components 
+<br> *Common Item Components </br>
 *Uncommon Item Componenets
 *Rare Item Components
 *Rare Upgrade Components
