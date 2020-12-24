@@ -23,6 +23,6 @@ Thanks and Enjoy!
 -Ryan
 
 
-**I in no way have any affiliation with CDProject Red, Cyberpunk 2077, and have no intentions of monetization.  This is just a fun project for me!
+**I in no way have any affiliation with CDProject Red, Cyberpunk 2077, and have no intentions of monetization.  I am just a big fan! and this is just a fun project for me.
 I'm constantly making things when I'm not at work.
 You may violate End User License Agreements by using this tool.**
