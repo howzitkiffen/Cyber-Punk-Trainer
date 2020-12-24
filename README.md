@@ -34,10 +34,10 @@ Can add +1 to the following values:
 
 Can add +1000 to the following values:
 <br> *Common Item Components </br>
-*Uncommon Item Componenets
-<br>*Rare Item Components</br>
-<br>*Rare Upgrade Components
-*Epic Item/Upgrade Components</br>
+<br> *Uncommon Item Componenets </br>
+<br> *Rare Item Components </br>
+<br> *Rare Upgrade Components </br>
+<br> *Epic Item/Upgrade Components </br>
 *Legendary Item/Upgrade Components
 
 
