@@ -29,16 +29,16 @@ Thanks and Enjoy!
 __Current Values:__
 
 Can add +1 to the following values:
-Attribute Points
-Perk Points
+*Attribute Points
+*Perk Points
 
 Can add +1000 to the following values:
-Common Item Components 
-Uncommon Item Componenets
-Rare Item Components
-Rare Upgrade Components
-Epic Item/Upgrade Components
-Legendary Item/Upgrade Components
+*Common Item Components 
+*Uncommon Item Componenets
+*Rare Item Components
+*Rare Upgrade Components
+*Epic Item/Upgrade Components
+*Legendary Item/Upgrade Components
 
 
 If there are other stats you want to see, let me know!
