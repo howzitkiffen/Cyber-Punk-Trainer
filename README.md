@@ -17,9 +17,10 @@ There shouldn't be any other add-ons to install.  Just make sure you are running
 
 If you run into any other issues, feel free to message me on Discord @ Howzit Kiffen (Sekts AndKandy)#4146
 
-YouTube Documentation:
+YouTube Documentation: https://youtu.be/iMYSpZ0vy8k
 
 Thanks and Enjoy!
+
 -Ryan
 
 
