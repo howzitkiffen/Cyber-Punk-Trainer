@@ -23,8 +23,8 @@ Thanks and Enjoy!
 
 -Ryan
 
-![Capture1](./Capture1.png)
-![Capture2](./Capture2.png)
+![Capture1](./Capture1.PNG)
+![Capture2](./Capture2.PNG)
 
 __Current Values:__
 
