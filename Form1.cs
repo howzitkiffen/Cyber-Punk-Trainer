@@ -14,6 +14,7 @@ namespace Cyber_Punk_Trainer
 {     
     public partial class Form1 : Form
     {
+        //Using the memory.dll
         Mem Meme = new Mem();
         public static string CyberPunk = "Cyberpunk2077.exe";
         public static string AttributePoints = "Cyberpunk2077.exe+0x03C7F200,0x9B0,0x38,0x0,0x0,0x38,0x68,0x8"; //Attribute Points
@@ -32,6 +33,10 @@ namespace Cyber_Punk_Trainer
             InitializeComponent();
         }
 
+
+        //Everything below are methods to be used inside of event listeners/handlers.
+        // All are done in their own thread, so as not to interfere with the game, nor to bind the program
+        //Temporarily
         private void addPerk()
         {
             try
