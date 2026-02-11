@@ -19,6 +19,15 @@ If you run into any other issues, feel free to message me on Discord @ Howzit Ki
 
 YouTube Documentation: https://youtu.be/iMYSpZ0vy8k
 
+
+## Dynamic Pointer Configuration
+
+To make updates easier, pointer paths now load from `pointers.ini` at runtime instead of being hardcoded in the UI code.
+
+- If a game patch changes addresses, update only the values in `pointers.ini`.
+- Keep the keys the same (for example `PerkPoints`, `AttributePoints`, etc.) and replace only the pointer value.
+- The file is copied with the executable, so you can patch pointers without rebuilding the trainer.
+
 Thanks and Enjoy!
 
 -Ryan
